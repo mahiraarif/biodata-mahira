@@ -1,0 +1,150 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #044fff6b, #003870b4);
+    color:#1a1a1a;
+}
+
+/* CONTAINER */
+.container{
+    max-width:1000px;
+    margin:40px auto;
+    background:rgb(255, 255, 255);
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 15px 35px rgba(0, 162, 255, 0.986);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.section{
+    margin-bottom:30px;
+    padding-bottom:20px;
+    border-bottom:2px solid #e0e0e0;
+}
+.jadwal{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:15px;
+}
+
+.jadwal th{
+    background:#00ddff;
+    color:white;
+    padding:12px;
+    text-align:left;
+}
+
+.jadwal td{
+    padding:12px;
+    border-bottom:1px solid #ddd;
+}
+
+.jadwal tr:hover{
+    background:#f2f2f2;
+}
+/* HEADER */
+.header{
+    text-align:left;
+}
+
+.header h1{
+    display:inline-block;
+    background:#008cff;
+    color:white;
+    padding:10px 25px;
+    border-radius:30px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* SECTION */
+.section{
+    margin-bottom:30px;
+    padding:20px;
+    border-radius:15px;
+    background:#f9f9f9;
+    transition:0.3s;
+}
+
+.section:hover{
+    transform:translateY(-5px);
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+}
+
+.section h2{
+    margin-bottom:15px;
+    color:#0059fff7;
+}
+
+/* LIST */
+ul{
+    padding-left:20px;
+}
+
+ul li{
+    margin-bottom:8px;
+}
+
+/* FOTO PROFIL (kalau nanti ditambahkan img) */
+img{
+    width:220px;
+    height:260px;
+    object-fit:cover;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0, 0, 0, 0.612);
+    margin:20px 0; /* rata kiri */
+}
+
+img:hover{
+    transform:scale(1.03);
+}
+
+/* BUTTON */
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 25px;
+    background:#0066ff;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#006aff;
+    transform:scale(1.05);
+}
+
+/* FOOTER */
+.footer{
+    text-align:left;
+    margin-top:40px;
+    padding-top:20px;
+    border-top:1px solid #ddd;
+    font-size:14px;
+    color:#0066ff;
+}
+
+/* ANIMASI */
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .container{
+        padding:20px;
+    }
+}
